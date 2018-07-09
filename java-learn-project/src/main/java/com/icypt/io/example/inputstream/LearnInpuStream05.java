@@ -1,6 +1,5 @@
-package com.icypt.io.example;
+package com.icypt.io.example.inputstream;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
