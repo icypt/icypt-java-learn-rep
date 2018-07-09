@@ -1,14 +1,16 @@
-package outputstream;
+package com.icypt.io.example.outputstream;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-public class OutPutStreamByString {
+public class OutPutStreamByByte {
     public static void main(String[] args) throws Exception{
-        String output = "hello world";
+        byte[] outputArray = "hello world".getBytes();
         String filePath = "D:\\output.txt";
         OutputStream ops = new FileOutputStream(filePath);
-        ops.write(output.getBytes());
+        for(int i=0; i < outputArray.length; i++) {
+            ops.write(outputArray[i]);
+        }
         ops.close();
         System.out.println("======写入结束========");
     }

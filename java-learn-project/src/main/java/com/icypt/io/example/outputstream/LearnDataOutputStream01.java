@@ -1,4 +1,4 @@
-package outputstream;
+package com.icypt.io.example.outputstream;
 
 import java.io.*;
 
