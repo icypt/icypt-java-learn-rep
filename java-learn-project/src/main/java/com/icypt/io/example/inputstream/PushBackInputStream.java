@@ -7,7 +7,7 @@ import java.io.PushbackInputStream;
 /**
  * 回退流
  */
-public class PushBackInputStream01 {
+public class PushBackInputStream {
     public static void main(String[] args) {
         String input = "abcdef,hjhjddhh";
         PushbackInputStream pbis = null;

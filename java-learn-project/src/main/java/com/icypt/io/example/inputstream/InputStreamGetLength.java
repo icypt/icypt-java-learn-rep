@@ -4,21 +4,16 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 
 /**
- * 读文件内容,节省空间,逐字节读取
+ * 字节流，读取文件内容
  */
-public class LearnInpuStream05 {
+public class InputStreamGetLength {
     public static void main(String[] args) throws Exception{
         String filePath = ClassLoader.getSystemResource("example.txt").getPath();
         InputStream inputStream = new FileInputStream(filePath);
         byte[] bytes = new byte[2048];
-        int count=0;
-        int temp=0;
-        System.out.println(inputStream.read());
-        while((temp = inputStream.read()) != (-1)) {
-            bytes[count++] = (byte) temp;
-        }
+        int len = inputStream.read(bytes);
         inputStream.close();
-        System.out.println(new String(bytes));
-
+        System.out.println("读入的长度为："+len);
+        System.out.println(new String(bytes,0, len));
     }
 }

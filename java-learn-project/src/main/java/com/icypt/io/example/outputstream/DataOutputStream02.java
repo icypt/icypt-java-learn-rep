@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * 数据输出流
  */
-public class LearnDataOutputStream01 {
+public class DataOutputStream02 {
     public static void main(String[] args) throws Exception{
         //取得类加载路径
         String filePath = "D:\\test.txt";

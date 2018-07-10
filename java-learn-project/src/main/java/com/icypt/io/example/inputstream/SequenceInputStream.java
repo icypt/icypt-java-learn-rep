@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * 将inputStream1和inputStream2合并输出到
  */
-public class SequenceInputStream01 {
+public class SequenceInputStream {
     public static void main(String[] args) throws IOException {
         File file1 = new File("D:\\input1.txt");
         File file2 = new File("D:\\input2.txt");
@@ -14,7 +14,7 @@ public class SequenceInputStream01 {
         InputStream inputStream2 = new FileInputStream(file2);
         OutputStream outputStream = new FileOutputStream(file3);
         //合并输入流
-        SequenceInputStream sequenceInputStream = new SequenceInputStream(inputStream1,inputStream2);
+        java.io.SequenceInputStream sequenceInputStream = new java.io.SequenceInputStream(inputStream1,inputStream2);
         int temp = 0;
         while ((temp = sequenceInputStream.read()) != -1) {
             outputStream.write(temp);

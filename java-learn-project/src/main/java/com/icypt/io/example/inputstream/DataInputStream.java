@@ -5,11 +5,11 @@ import java.io.*;
 /**
  * 数据输入流
  */
-public class LearnDataInputStream02 {
+public class DataInputStream {
     public static void main(String[] args) throws Exception{
         String filePath = "D:\\test.txt";
         File file = new File(filePath);
-        DataInputStream dataInputStream = new DataInputStream(new FileInputStream(file));
+        java.io.DataInputStream dataInputStream = new java.io.DataInputStream(new FileInputStream(file));
 
         String name = "";
         float price = 0.0f;
