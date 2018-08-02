@@ -10,7 +10,7 @@ import java.util.List;
 
 @Controller
 public class MenuTreeController {
-    @RequestMapping("/getTreeViewData")
+    @RequestMapping("/getMenuTreeData")
     @ResponseBody
     public Object getTreeViewData() {
         //构造数据记录
