@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class BootstrapTreeViewController {
+public class TreeViewController {
 
-    @GetMapping("/bootstrapTreeView/getIndex")
+    @GetMapping("/treeView/getIndex")
     public String goIndex() {
-        return "bootstrapTreeView/index";
+        return "treeView/index";
     }
 
-    @GetMapping("/bootstrapTreeView/getTreeViewData")
+    @GetMapping("/treeView/getTreeViewData")
     @ResponseBody
     public Object getTreeViewData() {
         List<TreeViewVo> treeViewVos = new ArrayList<>();
